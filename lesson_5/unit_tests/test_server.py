@@ -4,8 +4,8 @@ import sys
 import os
 import unittest
 
-from lesson_4.general.variables import RESPONSE, ERROR, TIME, USER, ACCOUNT_NAME, ACTION, PRESENCE
-from lesson_4.server import process_client_message
+from lesson_5.general.variables import RESPONSE, ERROR, TIME, USER, ACCOUNT_NAME, ACTION, PRESENCE
+from lesson_5.server import process_client_message
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
 

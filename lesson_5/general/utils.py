@@ -2,7 +2,7 @@
 
 import json
 
-from lesson_4.general.variables import MAX_PACKAGE_LENGTH, ENCODING
+from lesson_5.general.variables import MAX_PACKAGE_LENGTH, ENCODING
 
 
 def get_message(client):
