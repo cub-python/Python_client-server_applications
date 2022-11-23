@@ -3,8 +3,8 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/lesson-1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/lesson-7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/lesson_2" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/lesson_5" isTestSource="false" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.10" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
