@@ -5,8 +5,8 @@ import os
 import unittest
 import json
 
-from lesson_5.general.utils import send_message, get_message
-from lesson_5.general.variables import ENCODING, ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR
+from general.utils import send_message, get_message
+from general.variables import ENCODING, ACTION, PRESENCE, TIME, USER, ACCOUNT_NAME, RESPONSE, ERROR
 
 sys.path.append(os.path.join(os.getcwd(), '..'))
 

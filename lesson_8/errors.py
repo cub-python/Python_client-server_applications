@@ -1,18 +1,24 @@
 # Ошибки
 
 class IncorrectDataRecivedError(Exception):
-    """
-    Исключение  - некорректные данные получены от сокета
-    """
+    # Исключение  - некорректные данные получены от сокета
+
 
     def __str__(self):
         return 'Принято некорректное сообщение от удалённого компьютера.'
 
+class ServerError(Exception):
+    # ИСКЛЮЧЕНИЕ ОШИБКИ СЕРВЕРА
+    def __int__(self, text):
+        self.text = text
+
+    def __str__(self):
+        return self.text
+
 
 class NonDictInputError(Exception):
-    """
-    Исключение - аргумент функции не словарь
-    """
+    # Исключение - аргумент функции не словарь
+
 
     def __str__(self):
         return 'Аргумент функции должен быть словарём.'
