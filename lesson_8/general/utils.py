@@ -2,7 +2,6 @@
 
 import json
 import sys
-
 from general.variables import MAX_PACKAGE_LENGTH, ENCODING
 from errors import IncorrectDataRecivedError, NonDictInputError
 from decos import log
@@ -11,14 +10,11 @@ sys.path.append('../')
 @log
 def get_message(client):
     '''
-    :param client:
-    :return:
     Утилита приёма и декодирования сообщения
     принимает байты выдаёт словарь, если приняточто-то другое отдаёт ошибку значения
     :param client:
     :return:
     '''
-
     encoded_response = client.recv(MAX_PACKAGE_LENGTH)
     if isinstance(encoded_response, bytes):
         json_response = encoded_response.decode(ENCODING)
@@ -27,6 +23,7 @@ def get_message(client):
             return response
         raise IncorrectDataRecivedError
     raise IncorrectDataRecivedError
+
 @log
 def send_message(sock, message):
     '''

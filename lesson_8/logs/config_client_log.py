@@ -20,12 +20,13 @@ STREAM_HANDLER = logging.StreamHandler(sys.stderr)
 STREAM_HANDLER.setFormatter(CLIENT_FORMATTER)
 STREAM_HANDLER.setLevel(logging.ERROR)
 LOG_FILE = logging.FileHandler(PATH, encoding='utf8')
-LOG_FILE.setLevel(LOGGING_LEVEL)
+LOG_FILE.setFormatter(CLIENT_FORMATTER)
 
 """создаём регистратор и настраиваем его """
 LOGGER = logging.getLogger('client')
 LOGGER.addHandler(STREAM_HANDLER)
 LOGGER.setLevel(LOGGING_LEVEL)
+LOGGER.addHandler(LOG_FILE)
 
 """Oтладка"""
 if __name__ == '__main__':
